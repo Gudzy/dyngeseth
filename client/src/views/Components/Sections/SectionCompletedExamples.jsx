@@ -6,6 +6,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
+import Button from "components/CustomButtons/Button.jsx";
+import { Link } from "react-router-dom";
+
 
 import completedStyle from "assets/jss/material-kit-react/views/componentsSections/completedStyle.jsx";
 
@@ -17,14 +20,18 @@ class SectionCompletedExamples extends React.Component {
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={8}>
-              <h2>Completed with examples</h2>
+              <h2>Hi, there!</h2>
               <h4>
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. More importantly, looking at them will give you a picture of
-                what you can build with this powerful kit.
+              I am Gustav Dyngeseth, and I'm an engineer. I can help you or your organization improve productivity through my workshops, consulting, or digitalized solutions. I'm passionate about communication and your success is my business.
               </h4>
+              <Link to="/about" className={classes.dropdownLink}>
+              <Button 
+                color="primary"
+                size="lg"
+                target="_blank">More about me</Button>
+                </Link>
             </GridItem>
+            
           </GridContainer>
         </div>
       </div>

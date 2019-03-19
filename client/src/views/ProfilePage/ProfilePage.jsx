@@ -17,18 +17,24 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
-import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/GD_PB.png";
 
-import studio1 from "assets/img/examples/studio-1.jpg";
+import android from "assets/img/examples/android-studio-logo.png";
 import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
 import studio4 from "assets/img/examples/studio-4.jpg";
 import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
+import python from "assets/img/examples/python-logo.png";
+import javascript from "assets/img/examples/javascript_logo.png";
+import azure from "assets/img/examples/azure-logo.png";
+import sql from "assets/img/examples/sql-logo.png";
+import java from "assets/img/examples/java-logo.png";
+import firebase from "assets/img/examples/firebase-logo.png";
+import react from "assets/img/examples/react-logo.png";
+import aws from "assets/img/examples/aws-logo.png";
+import ai from "assets/img/examples/ai.png";
+import google from "assets/img/examples/googleplay-log.png";
+import reactnative from "assets/img/examples/reactnative-logo.png";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
@@ -54,7 +60,21 @@ class ProfilePage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax small filter image={require("assets/img/bg7.jpg")} />
+        <Parallax image={require("assets/img/aiblue.jpg")} >
+        <div className={classes.container}>
+            <GridContainer>
+              <GridItem>
+                <div className={classes.brand}>
+                  <h1 className={classes.title}>Gustav Dyngeseth.</h1>
+                  <h3 className={classes.subtitle}>
+                    Consultant & Software Developer
+                  </h3>
+                </div>
+              </GridItem>
+            </GridContainer>
+          </div>
+
+        </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <div className={classes.container}>
@@ -65,98 +85,115 @@ class ProfilePage extends React.Component {
                       <img src={profile} alt="..." className={imageClasses} />
                     </div>
                     <div className={classes.name}>
-                      <h3 className={classes.title}>Christian Louboutin</h3>
+                      <h3 className={classes.title}>Gustav Dyngeseth</h3>
                       <h6>Consultant & Software Developer</h6>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-twitter"} />
+                      <Button justIcon link href="https://www.linkedin.com/in/gustavdyngeseth/"className={classes.margin5}>
+                        <i className={"fab fa-linkedin"} />
                       </Button>
-                      <Button justIcon link className={classes.margin5}>
+                      <Button justIcon link href="https://www.instagram.com/gustavd/" className={classes.margin5}>
                         <i className={"fab fa-instagram"} />
                       </Button>
-                      <Button justIcon link className={classes.margin5}>
+                      <Button justIcon link href="https://www.facebook.com/GDyngeseth" className={classes.margin5}>
                         <i className={"fab fa-facebook"} />
+                      </Button>
+                      <Button justIcon link href="https://github.com/Gudzy" className={classes.margin5}>
+                        <i className={"fab fa-github"} />
                       </Button>
                     </div>
                   </div>
                 </GridItem>
               </GridContainer>
               <div className={classes.description}>
-                <p>
-                  Student & Consultant of considerable range.
-                  Specialized within Web Development and Management Consulting. 
-                  Studying Computer Science at NTNU and working as Chief Technology Officer
-                   at Spire Consulting. {" "}
+                <p> 
+                  I am a Computer Science student at NTNU Gløshaugen in Trondheim, specialized within Software Development. In addition, I manage a consultancy named Spire Consulting as Partner & Chief Technology Officer. 
+                  We deliver both strategic and technical solutions to small- and medium-sized businesses accross Scandinavia. We are located in Trondheim, Norway. 
+                  Feel free to connect with me
+                  on <a href="https://www.linkedin.com/in/gustavdyngeseth/">LinkedIn.</a> {" "}
                 </p>
               </div>
               <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+                <GridItem xs={15} sm={12} md={8} className={classes.navWrapper}>
                   <NavPills
                     alignCenter
                     color="primary"
                     tabs={[
                       {
-                        tabButton: "Studio",
+                        tabButton: "Learning",
                         tabIcon: Camera,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={studio1}
+                                src={android}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={studio2}
+                                src={aws}
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={studio5}
+                                src={ai}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={studio4}
+                                src={google}
                                 className={navImageClasses}
                               />
+                              
                             </GridItem>
                           </GridContainer>
                         )
                       },
                       {
-                        tabButton: "Work",
+                        tabButton: "Knowledge",
                         tabIcon: Palette,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work1}
+                                src={python}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work2}
+                                src={javascript}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work3}
+                                src={azure}
                                 className={navImageClasses}
                               />
+                             
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
+                              
                               <img
                                 alt="..."
-                                src={work4}
+                                src={sql}
+                                className={navImageClasses}
+                              />
+                                <img
+                                alt="..."
+                                src={firebase}
+                                className={navImageClasses}
+                              />
+                             
+                              <img
+                                alt="..."
+                                src={java}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work5}
+                                src={react}
                                 className={navImageClasses}
                               />
                             </GridItem>
@@ -164,38 +201,39 @@ class ProfilePage extends React.Component {
                         )
                       },
                       {
-                        tabButton: "Favorite",
+                        tabButton: "Favorites",
                         tabIcon: Favorite,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work4}
+                                src={firebase}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={studio3}
+                                src={javascript}
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work2}
+                                src={react}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work1}
+                                src={python}
                                 className={navImageClasses}
                               />
-                              <img
+                               <img
                                 alt="..."
-                                src={studio1}
+                                src={reactnative}
                                 className={navImageClasses}
                               />
+                              
                             </GridItem>
                           </GridContainer>
                         )

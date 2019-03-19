@@ -35,15 +35,15 @@ class Components extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/bg4.jpg")}>
+        <Parallax image={require("assets/img/home.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
                   <h1 className={classes.title}>Gustav Dyngeseth.</h1>
-                  <h3 className={classes.subtitle}>
+                  <h1 className={classes.subtitle}>
                     Consultant & Software Developer
-                  </h3>
+                  </h1>
                 </div>
               </GridItem>
             </GridContainer>

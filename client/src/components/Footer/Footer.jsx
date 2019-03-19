@@ -38,11 +38,20 @@ function Footer({ ...props }) {
          
             <ListItem className={classes.inlineBlock}>
               <a
-                href="http://blog.spireconsulting.no/"
+                href="http://blogg.spireconsulting.no/"
                 className={classes.block}
                 target="_blank"
               >
                 Blog
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="mailto:gustav.dyngeseth@spireconsulting.no"
+                className={classes.block}
+                target="_blank"
+              >
+                gustav.dyngeseth@spireconsulting.no
               </a>
             </ListItem>
           </List>
